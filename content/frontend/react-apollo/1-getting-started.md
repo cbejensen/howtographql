@@ -255,7 +255,18 @@ Next, go ahead move `project.graphcool` into the `hackernews-react-apollo` direc
 
 To improve the project structure, move on to create two directories, both inside the `src` folder. The first is called `components` and will hold all our React components. Call the second one `styles`, that one is for all the CSS files you'll use.
 
-Now clean up the existing files accordingly. Move `App.js` into `components` and `App.css` as well as `index.css` into `styles`.
+Now clean up the existing files accordingly. Move `App.js` into `components` and `App.css` as well as `index.css` into `styles`. Make sure to adjust the file paths as well:
+
+#### App.js
+```javascript
+import logo from '../logo.svg';
+import '../styles/App.css';
+```
+#### index.js
+```javascript
+import './styles/index.css';
+import App from './components/App';
+```
 
 </Instruction>
 
